@@ -19,8 +19,7 @@ app.post("/getPdf",async(req,res)=>{
 
         await new Promise((resolve,reject)=>{
             pdf.create(html, { "orientation": "landscape" }).toFile(`./public/upload_${tm}.pdf`, async function (err, res) {
-                console.log("yesDone",res);
-                console.log("resolving")
+                console.log("Creatinf pdf")
                 resolve();
 
             });

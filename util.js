@@ -1,5 +1,4 @@
 const fxnHtml = (params)=>{
-    console.log("paramsnow",params);
 
     let html = `
     <html>
